@@ -1,0 +1,229 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+CSS Variable
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    border-radius: 4px;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+    
+
+}
+/* Navigation bar : Logo and image  */
+#logo{
+    margin: 20px 5px;
+}
+/* Navigation bar : List styling */
+#logo img{
+    margin: 20px 5px;
+    height: 56px;
+
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.4rem;
+}
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+#navbar ul li a:hover {
+   color: black;
+   background-color: white;
+}
+/* HOme section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px ;
+    height: 630px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: '';
+    background:url('./zmain.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 730px;
+    border-radius: 4px;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+
+}
+#home h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+/* Services Class */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    /* border: 2px solid firebrick; */
+    padding: 34px;
+    align-items: center;
+    align-content: c;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background: rgb(221, 217, 215);
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+
+}
+#services .box p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#services{}
+
+/* cleint section */
+#client-section{
+    height: 50%;
+    position: relative;
+}
+#client-section::before{
+    content: '';
+    position: absolute;
+    background: url('zsalad.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 185px;
+}
+.client-item{
+    padding: 25px;
+    margin: 40px;
+    
+}
+    /* contact section */
+    #contact{
+        position: relative;
+        height: 500px;
+        margin-top: -4px;
+    }
+    #contact::before{
+        content: '';
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: .7;
+        background: url('zcontact.jpg')no-repeat center center/cover;
+        /* margin: 17px; */
+    }
+
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    #contact-box form{
+        width: 50%;
+    }
+    #contact-box label{
+        font-size: 2rem;
+        font-family: fantasy;
+
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding:0rem;
+        border-radius: 10px;
+        font-size: 1.1rem;
+    }
+    footer{
+        background: black;
+        color: white;
+        padding: 3px 5px;
+    }
+    #footer{
+        font-size: 18px;
+    }
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.h-secondary{
+    font-size: 3rem;
+    padding: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: green;
+    color: rgb(0, 0, 0);
+    margin: 16px;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+    justify-content: center;
+}
+.btn:hover{
+    color: white;
+}
+.center{
+    text-align: center;
+    font-size: 25px;
+}
